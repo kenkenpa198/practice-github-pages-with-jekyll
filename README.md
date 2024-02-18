@@ -126,6 +126,8 @@ Bundler version 2.5.3
 
 - [Jekyll を使用して GitHub Pages サイトを作成する - GitHub Enterprise Server 3.12 Docs](https://docs.github.com/ja/enterprise-server@3.12/pages/setting-up-a-github-pages-site-with-jekyll/creating-a-github-pages-site-with-jekyll?platform=linux)
 - [Jekyll を使用して GitHub Pages サイトをローカルでテストする - GitHub Enterprise Server 3.12 Docs](https://docs.github.com/ja/enterprise-server@3.12/pages/setting-up-a-github-pages-site-with-jekyll/testing-your-github-pages-site-locally-with-jekyll)
+- [Dependency versions | GitHub Pages](https://pages.github.com/versions/)
+- [Supported themes | GitHub Pages](https://pages.github.com/themes/)
 
 [^1]: インストールしない場合、`bundle exec jekyll serve` 実行時にエラーが発生する。
 
