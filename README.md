@@ -1,12 +1,16 @@
 <!-- omit in toc -->
 # Helloworld - Github Pages with Jekyll
 
+公開ページ:
+
+- [https://kenkenpa198.github.io/helloworld-github-pages-with-jekyll/](https://kenkenpa198.github.io/helloworld-github-pages-with-jekyll/)
+
 <!-- omit in toc -->
 ## 目次
 
-- [1. Environment](#1-environment)
-- [2. Commands](#2-commands)
-- [3. Reference](#3-reference)
+- [1. 実行環境](#1-実行環境)
+- [2. 実行したコマンド](#2-実行したコマンド)
+- [3. 参考文献](#3-参考文献)
 
 ## 1. 実行環境
 
