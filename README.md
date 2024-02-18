@@ -51,7 +51,7 @@ Bundler version 2.5.3
 
 ## 2. 実行したコマンド
 
-ローカル環境で実行したコマンドのメモ。GitHub Pages 側の設定は公式ドキュメントを参照。
+ローカル環境で実行したコマンドのメモ。
 
 1. プロジェクトのディレクトリを作成する。
 
@@ -80,7 +80,7 @@ Bundler version 2.5.3
     Bundle install skipped.
     ```
 
-3. `Gemfile` , `_config.yml` を編集する。
+4. `Gemfile` , `_config.yml` を編集する。
 
     ```shell
     # Edit Gemfile, _config.yml
@@ -101,13 +101,13 @@ Bundler version 2.5.3
     +baseurl: /helloworld-github-pages-with-jekyll/ # the subpath of your site, e.g. /blog
     ```
 
-4. `webrick` をインストールする [^1] 。
+5. `webrick` をインストールする [^1] 。
 
     ```shell
     $ bundle add webrick
     ```
 
-5. `jekyll serve` を実行する。
+6. `jekyll serve` を実行する。
 
     ```shell
     $ bundle exec jekyll serve
@@ -116,9 +116,11 @@ Bundler version 2.5.3
     Server running... press ctrl-c to stop.
     ```
 
-6. `http://127.0.0.1:4000/helloworld-github-pages-with-jekyll/` へアクセスする。
+7. `http://127.0.0.1:4000/helloworld-github-pages-with-jekyll/` へアクセスする。
 
     ![preview](./images/preview.png)
+
+後は GitHub へプッシュ後、Pages の設定を行う。設定方法は参考文献を参照。
 
 ## 3. 参考文献
 
