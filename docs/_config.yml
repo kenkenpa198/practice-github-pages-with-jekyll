@@ -53,4 +53,3 @@ plugins:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
-# place folder name if the site is served in a subfolder
