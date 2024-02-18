@@ -101,7 +101,13 @@ Bundler version 2.5.3
     $ bundle install
     ```
 
-6. `_config.yml` を編集する [^1] 。
+6. `webrick` をインストールする [^1] 。
+
+    ```shell
+    $ bundle add webrick
+    ```
+
+7. `_config.yml` を編集する [^2] 。
 
     ```shell
     $ git diff
@@ -109,12 +115,6 @@ Bundler version 2.5.3
     +++ b/docs/_config.yml
     -baseurl: "" # the subpath of your site, e.g. /blog
     +baseurl: /helloworld-github-pages-with-jekyll/ # the subpath of your site, e.g. /blog
-    ```
-
-7. `webrick` をインストールする [^2] 。
-
-    ```shell
-    $ bundle add webrick
     ```
 
 8. `jekyll serve` を実行する。
@@ -139,12 +139,12 @@ Bundler version 2.5.3
 - [Dependency versions | GitHub Pages](https://pages.github.com/versions/)
 - [Supported themes | GitHub Pages](https://pages.github.com/themes/)
 
-[^1]: 今回は `docs` ディレクトリを作成したため、`baseurl` へリポジトリ名を指定する必要がある。
-
-[^2]: インストールしない場合、`bundle exec jekyll serve` 実行時にエラーが発生する。
+[^1]: インストールしない場合、`bundle exec jekyll serve` 実行時にエラーが発生する。
 
     - [Jekyll を使用して GitHub Pages サイトをローカルでテストする - GitHub Enterprise Server 3.12 Docs](https://docs.github.com/ja/enterprise-server@3.12/pages/setting-up-a-github-pages-site-with-jekyll/testing-your-github-pages-site-locally-with-jekyll#building-your-site-locally)
 
     > メモ: Ruby 3.0 以降をインストールした場合 (Homebrew を使用して既定のバージョンをインストールした場合に発生することがあります)、この手順でエラーが発生するおそれがあります。 これは、これらのバージョンの Ruby には、`webrick` がインストールされなくなったためです。
     >
     > エラーを修正するには、`bundle add webrick` を実行してから `bundle exec jekyll serve` をもう一度実行します。
+
+[^2]: 今回は `docs` ディレクトリを作成したため、`baseurl` へリポジトリ名を指定する必要がある。
