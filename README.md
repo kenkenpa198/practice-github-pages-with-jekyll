@@ -80,10 +80,9 @@ Bundler version 2.5.3
     Bundle install skipped.
     ```
 
-4. `Gemfile` , `_config.yml` を編集する。
+4. `Gemfile` を編集する。
 
     ```shell
-    # Edit Gemfile, _config.yml
     $ git diff
     diff --git a/docs/Gemfile b/docs/Gemfile
     index f01211b..c93db50 100644
@@ -94,20 +93,31 @@ Bundler version 2.5.3
 
     -# gem "github-pages", group: :jekyll_plugins
     +gem "github-pages", "~> 231", group: :jekyll_plugins
+    ```
 
+5. `bundle install` を実行する。
+
+    ```shell
+    $ bundle install
+    ```
+
+6. `_config.yml` を編集する [^1] 。
+
+    ```shell
+    $ git diff
     --- a/docs/_config.yml
     +++ b/docs/_config.yml
     -baseurl: "" # the subpath of your site, e.g. /blog
     +baseurl: /helloworld-github-pages-with-jekyll/ # the subpath of your site, e.g. /blog
     ```
 
-5. `webrick` をインストールする [^1] 。
+7. `webrick` をインストールする [^2] 。
 
     ```shell
     $ bundle add webrick
     ```
 
-6. `jekyll serve` を実行する。
+8. `jekyll serve` を実行する。
 
     ```shell
     $ bundle exec jekyll serve
@@ -116,7 +126,7 @@ Bundler version 2.5.3
     Server running... press ctrl-c to stop.
     ```
 
-7. `http://127.0.0.1:4000/helloworld-github-pages-with-jekyll/` へアクセスする。
+9. `http://127.0.0.1:4000/helloworld-github-pages-with-jekyll/` へアクセスする。
 
     ![preview](./images/preview.png)
 
@@ -129,7 +139,9 @@ Bundler version 2.5.3
 - [Dependency versions | GitHub Pages](https://pages.github.com/versions/)
 - [Supported themes | GitHub Pages](https://pages.github.com/themes/)
 
-[^1]: インストールしない場合、`bundle exec jekyll serve` 実行時にエラーが発生する。
+[^1]: 今回は `docs` ディレクトリを作成したため、`baseurl` へリポジトリ名を指定する必要がある。
+
+[^2]: インストールしない場合、`bundle exec jekyll serve` 実行時にエラーが発生する。
 
     - [Jekyll を使用して GitHub Pages サイトをローカルでテストする - GitHub Enterprise Server 3.12 Docs](https://docs.github.com/ja/enterprise-server@3.12/pages/setting-up-a-github-pages-site-with-jekyll/testing-your-github-pages-site-locally-with-jekyll#building-your-site-locally)
 
