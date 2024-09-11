@@ -3,7 +3,7 @@
 
 公開ページ:
 
-- [https://kenkenpa198.github.io/helloworld-github-pages-with-jekyll/](https://kenkenpa198.github.io/helloworld-github-pages-with-jekyll/)
+- [https://kenkenpa198.github.io/practice-github-pages-with-jekyll/](https://kenkenpa198.github.io/practice-github-pages-with-jekyll/)
 
 <!-- omit in toc -->
 ## 目次
@@ -57,10 +57,10 @@ Bundler version 2.5.3
 
     ```shell
     # make project directory
-    $ mkdir helloworld-github-pages-with-jekyll
-    $ cd helloworld-github-pages-with-jekyll
+    $ mkdir practice-github-pages-with-jekyll
+    $ cd practice-github-pages-with-jekyll
     $ git init
-    Initialized empty Git repository in .../helloworld-github-pages-with-jekyll/.git/
+    Initialized empty Git repository in .../practice-github-pages-with-jekyll/.git/
     ```
 
 2. 公開用ディレクトリを作成する。
@@ -76,7 +76,7 @@ Bundler version 2.5.3
     $ jekyll new --skip-bundle .
     Ignoring stringio-3.0.4 because its extensions are not built. Try: gem pristine stringio --version 3.0.4
     Ignoring stringio-3.0.4 because its extensions are not built. Try: gem pristine stringio --version 3.0.4
-    New jekyll site installed in .../helloworld-github-pages-with-jekyll/docs.
+    New jekyll site installed in .../practice-github-pages-with-jekyll/docs.
     Bundle install skipped.
     ```
 
@@ -114,7 +114,7 @@ Bundler version 2.5.3
     --- a/docs/_config.yml
     +++ b/docs/_config.yml
     -baseurl: "" # the subpath of your site, e.g. /blog
-    +baseurl: /helloworld-github-pages-with-jekyll/ # the subpath of your site, e.g. /blog
+    +baseurl: /practice-github-pages-with-jekyll/ # the subpath of your site, e.g. /blog
     ```
 
 8. `jekyll serve` を実行する。
@@ -122,11 +122,11 @@ Bundler version 2.5.3
     ```shell
     $ bundle exec jekyll serve
     ...
-        Server address: http://127.0.0.1:4000/helloworld-github-pages-with-jekyll//
+        Server address: http://127.0.0.1:4000/practice-github-pages-with-jekyll//
     Server running... press ctrl-c to stop.
     ```
 
-9. `http://127.0.0.1:4000/helloworld-github-pages-with-jekyll/` へアクセスする。
+9. `http://127.0.0.1:4000/practice-github-pages-with-jekyll/` へアクセスする。
 
     ![preview](./images/preview.png)
 
