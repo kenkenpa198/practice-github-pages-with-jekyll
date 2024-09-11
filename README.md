@@ -1,5 +1,5 @@
 <!-- omit in toc -->
-# Helloworld - Github Pages with Jekyll
+# Practice - Github Pages with Jekyll
 
 公開ページ:
 
