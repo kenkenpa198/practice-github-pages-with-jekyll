@@ -3,7 +3,7 @@
 
 公開ページ:
 
-- [https://kenkenpa198.github.io/practice-github-pages-with-jekyll/](https://kenkenpa198.github.io/practice-github-pages-with-jekyll/)
+- [https://kem198.github.io/practice-github-pages-with-jekyll/](https://kem198.github.io/practice-github-pages-with-jekyll/)
 
 <!-- omit in toc -->
 ## 目次
